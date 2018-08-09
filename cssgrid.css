@@ -1,0 +1,34 @@
+/* Mobile */
+
+.wrapper {
+    color: rgb(255, 153, 0);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: right;
+    align-items: center;
+}
+
+#ex1 {
+    background-color: blue;
+    align-self: start;
+}
+
+#ex2 {
+    background-color: yellow;
+    height: 250px;
+}
+
+#ex3 {
+    background-color: purple;
+    justify-self: right;
+}
+
+/* Desktop
+If it has a screen and the width is >= 750px, 3 columns */
+@media screen and (min-width: 750px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        /* OR
+        grid-template-columns: repeat (3, 1fr); */
+    }
+}
